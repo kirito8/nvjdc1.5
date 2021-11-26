@@ -1,13 +1,14 @@
 # nvjdcdocker
 1.2版本及以后快速升级：
 
-cd /volume1/docker/nvjdc
-sudo docker stop nvjdc
+cd /root/nolanjdc
+docker stop nolanjdc
 git pull
-sudo docker start nvjdc
+docker start nolanjdc
+docker logs -f nolanjdc 
 
 #拉源码
-git clone https://ghproxy.com/https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+git clone https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
 
 #拉镜像
 sudo docker pull nolanhzy/nvjdc:latest
